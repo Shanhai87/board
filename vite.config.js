@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/board/', // Путь, который соответствует вашему репозиторию на GitHub Pages
+  build: {
+    outDir: 'dist', // где будет собираться проект
+  },
 })
