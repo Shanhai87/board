@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
 
     // Отправляем запрос на сервер
-    const response = await fetch('https://team-board.ru/login', {
+    const response = await fetch('https://team-board.ru/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

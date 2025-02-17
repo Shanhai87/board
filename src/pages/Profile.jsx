@@ -13,7 +13,7 @@ const Profile = () => {
     } else {
       // Здесь можно сделать запрос к серверу для получения данных пользователя
       // используя токен для аутентификации
-      fetch('https://team-board.ru/profile', {
+      fetch('https://team-board.ru/api/profile', {
         headers: {
           'Authorization': `Bearer ${token.split('=')[1]}`,
         },
